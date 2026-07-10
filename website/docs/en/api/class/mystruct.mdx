@@ -1,0 +1,54 @@
+---
+title: "MyStruct | Class | API | example"
+description: A sample instance of a person
+head:
+  - - meta
+    - property: "og:url"
+      content: "https://effected.spencerbeg.gs/api/class/mystruct"
+  - - meta
+    - property: "og:type"
+      content: article
+  - - meta
+    - property: "og:description"
+      content: A sample instance of a person
+  - - meta
+    - property: "og:image"
+      content: "https://effected.spencerbeg.gs/og-image.png"
+  - - meta
+    - property: "og:image:alt"
+      content: "example - example API Documentation"
+  - - meta
+    - property: "article:published_time"
+      content: "2026-07-08T18:48:19.617Z"
+  - - meta
+    - property: "article:modified_time"
+      content: "2026-07-08T18:48:19.617Z"
+  - - meta
+    - property: "article:section"
+      content: Classes
+  - - meta
+    - property: "article:tag"
+      content: TypeScript
+  - - meta
+    - property: "article:tag"
+      content: API
+  - - meta
+    - property: "article:tag"
+      content: example
+---
+
+
+import { SourceCode } from "@rspress/core/theme";
+import { ParametersTable } from "rspress-plugin-api-extractor/runtime";
+import { ApiSignature, ApiMember, ApiExample } from "rspress-plugin-api-extractor/runtime";
+
+# MyStruct
+
+A sample instance of a person
+
+<ApiSignature code={"class MyStruct extends MyStruct_base {\n    static readonly decodeUnknownSync: (input: unknown, options?: import(\"effect/SchemaAST\").ParseOptions) => Schema.Struct.ReadonlySide<{\n    readonly name: Schema.String;\n  }, \"Type\">;\n}"} source={"class MyStruct extends MyStruct_base {\n    static readonly decodeUnknownSync: (input: unknown, options?: import(\"effect/SchemaAST\").ParseOptions) => Schema.Struct.ReadonlySide<{\n    readonly name: Schema.String;\n  }, \"Type\">;\n}"} apiScope={"api"} />
+
+## Static Properties
+
+<ApiMember code={"static readonly decodeUnknownSync: (input: unknown, options?: import(\"effect/SchemaAST\").ParseOptions) => Schema.Struct.ReadonlySide<{\n    readonly name: Schema.String;\n  }, \"Type\">;"} source={"class MyStruct extends MyStruct_base {\nstatic readonly decodeUnknownSync: (input: unknown, options?: import(\"effect/SchemaAST\").ParseOptions) => Schema.Struct.ReadonlySide<{\n    readonly name: Schema.String;\n  }, \"Type\">;\n}"} apiScope={"api"} memberName={"decodeUnknownSync"} id={"decodeunknownsync"} />
+

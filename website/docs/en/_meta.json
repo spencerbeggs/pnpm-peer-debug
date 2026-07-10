@@ -1,0 +1,15 @@
+[
+    {
+        "type": "file",
+        "name": "index",
+        "label": "Overview"
+    },
+	{
+		"type": "dir",
+		"name": "api",
+		"label": "API Reference",
+		"collapsible": false,
+		"collapsed": false,
+		"overviewHeaders": [2]
+	}
+]

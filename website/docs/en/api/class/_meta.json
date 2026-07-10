@@ -1,0 +1,17 @@
+[
+	{
+		"type": "file",
+		"name": "mystruct",
+		"label": "MyStruct"
+	},
+	{
+		"type": "file",
+		"name": "person",
+		"label": "Person"
+	},
+	{
+		"type": "file",
+		"name": "versioned",
+		"label": "Versioned"
+	}
+]

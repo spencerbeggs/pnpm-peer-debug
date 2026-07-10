@@ -1,0 +1,22 @@
+[
+	{
+		"type": "file",
+		"name": "bob",
+		"label": "bob"
+	},
+	{
+		"type": "file",
+		"name": "mystruct_base",
+		"label": "MyStruct_base"
+	},
+	{
+		"type": "file",
+		"name": "person_base",
+		"label": "Person_base"
+	},
+	{
+		"type": "file",
+		"name": "versioned_base",
+		"label": "Versioned_base"
+	}
+]

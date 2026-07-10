@@ -1,0 +1,21 @@
+{
+	"extends": ["//"],
+	"tasks": {
+		"build": {
+			"cache": false,
+			"dependsOn": ["example#build:prod"],
+			"outputLogs": "full",
+			"outputs": ["dist/**"]
+		},
+		"dev": {
+			"cache": false,
+			"dependsOn": [],
+			"persistent": true
+		},
+		"preview": {
+			"cache": false,
+			"dependsOn": ["build"],
+			"persistent": true
+		}
+	}
+}

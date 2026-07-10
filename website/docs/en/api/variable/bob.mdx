@@ -1,0 +1,50 @@
+---
+title: "bob | Variable | API | example"
+description: A sample instance of a person
+head:
+  - - meta
+    - property: "og:url"
+      content: "https://effected.spencerbeg.gs/api/variable/bob"
+  - - meta
+    - property: "og:type"
+      content: article
+  - - meta
+    - property: "og:description"
+      content: A sample instance of a person
+  - - meta
+    - property: "og:image"
+      content: "https://effected.spencerbeg.gs/og-image.png"
+  - - meta
+    - property: "og:image:alt"
+      content: "example - example API Documentation"
+  - - meta
+    - property: "article:published_time"
+      content: "2026-07-08T13:36:43.173Z"
+  - - meta
+    - property: "article:modified_time"
+      content: "2026-07-08T13:36:43.173Z"
+  - - meta
+    - property: "article:section"
+      content: Variables
+  - - meta
+    - property: "article:tag"
+      content: TypeScript
+  - - meta
+    - property: "article:tag"
+      content: API
+  - - meta
+    - property: "article:tag"
+      content: example
+---
+
+
+import { SourceCode } from "@rspress/core/theme";
+import { ParametersTable } from "rspress-plugin-api-extractor/runtime";
+import { ApiSignature, ApiExample } from "rspress-plugin-api-extractor/runtime";
+
+# bob
+
+A sample instance of a person
+
+<ApiSignature code={"bob: Person"} source={"bob: Person"} apiScope={"api"} />
+
