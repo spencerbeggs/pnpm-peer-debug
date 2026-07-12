@@ -1,10 +1,31 @@
 import { Schema } from "effect";
+/**
+ * An animal
+ * @public
+ */
+export class Animal {
+	name: string;
+	createdAt: Date;
+
+	constructor(name: string, createdAt: Date) {
+		this.name = name;
+		this.createdAt = createdAt;
+	}
+}
+/**
+ * A cat
+ * @public
+ */ export class Cat extends Animal {
+	meow(): string {
+		return `${this.name} says: Meow!`;
+	}
+}
 
 /**
  * A person
  * @public
  */
-export class Person extends Schema.Class<Person>("Person")(
+export class EffectClass extends Schema.Class<EffectClass>("EffectClass")(
 	Schema.Struct({
 		/**
 		 * The name of the person

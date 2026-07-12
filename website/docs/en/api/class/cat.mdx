@@ -1,16 +1,16 @@
 ---
-title: "Versioned_base | Variable | API | example"
-description: No description available.
+title: "Cat | Class | API | example"
+description: A cat
 head:
   - - meta
     - property: "og:url"
-      content: "https://effected.spencerbeg.gs/api/variable/versioned_base"
+      content: "https://effected.spencerbeg.gs/api/class/cat"
   - - meta
     - property: "og:type"
       content: article
   - - meta
     - property: "og:description"
-      content: No description available.
+      content: A cat
   - - meta
     - property: "og:image"
       content: "https://effected.spencerbeg.gs/og-image.png"
@@ -19,13 +19,13 @@ head:
       content: "example - example API Documentation"
   - - meta
     - property: "article:published_time"
-      content: "2026-07-08T22:56:33.853Z"
+      content: "2026-07-12T18:44:56.281Z"
   - - meta
     - property: "article:modified_time"
-      content: "2026-07-08T22:56:33.853Z"
+      content: "2026-07-12T18:44:56.281Z"
   - - meta
     - property: "article:section"
-      content: Variables
+      content: Classes
   - - meta
     - property: "article:tag"
       content: TypeScript
@@ -40,11 +40,15 @@ head:
 
 import { SourceCode } from "@rspress/core/theme";
 import { ParametersTable } from "rspress-plugin-api-extractor/runtime";
-import { ApiSignature, ApiExample } from "rspress-plugin-api-extractor/runtime";
+import { ApiSignature, ApiMember, ApiExample } from "rspress-plugin-api-extractor/runtime";
 
-# Versioned_base
+# Cat
 
-No description available.
+A cat
 
-<ApiSignature code={"Versioned_base: Schema.Class<Versioned, Schema.Struct<{\n  readonly n: Schema.Number;\n}>, {}>"} source={"Versioned_base: Schema.Class<Versioned, Schema.Struct<{\n  readonly n: Schema.Number;\n}>, {}>"} apiScope={"api"} />
+<ApiSignature code={"class Cat extends Animal {\n    meow(): string;\n}"} source={"class Cat extends Animal {\n    meow(): string;\n}"} apiScope={"api"} />
+
+## Methods
+
+<ApiMember code={"meow(): string;"} source={"class Cat extends Animal {\nmeow(): string;\n}"} apiScope={"api"} memberName={"meow"} id={"meow"} hasParameters={false} />
 

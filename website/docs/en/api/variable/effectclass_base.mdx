@@ -1,10 +1,10 @@
 ---
-title: "Person_base | Variable | API | example"
+title: "EffectClass_base | Variable | API | example"
 description: No description available.
 head:
   - - meta
     - property: "og:url"
-      content: "https://effected.spencerbeg.gs/api/variable/person_base"
+      content: "https://effected.spencerbeg.gs/api/variable/effectclass_base"
   - - meta
     - property: "og:type"
       content: article
@@ -19,10 +19,10 @@ head:
       content: "example - example API Documentation"
   - - meta
     - property: "article:published_time"
-      content: "2026-07-08T13:57:07.439Z"
+      content: "2026-07-12T18:44:56.281Z"
   - - meta
     - property: "article:modified_time"
-      content: "2026-07-08T13:57:07.439Z"
+      content: "2026-07-12T18:44:56.281Z"
   - - meta
     - property: "article:section"
       content: Variables
@@ -42,9 +42,9 @@ import { SourceCode } from "@rspress/core/theme";
 import { ParametersTable } from "rspress-plugin-api-extractor/runtime";
 import { ApiSignature, ApiExample } from "rspress-plugin-api-extractor/runtime";
 
-# Person_base
+# EffectClass_base
 
 No description available.
 
-<ApiSignature code={"Person_base: Schema.Opaque<Person, Schema.Struct<{\n  readonly name: Schema.String;\n  readonly createdAt: Schema.Date;\n}>, {}> & Omit<Schema.Struct<{\n  readonly name: Schema.String;\n  readonly createdAt: Schema.Date;\n}>, keyof Schema.Top>"} source={"Person_base: Schema.Opaque<Person, Schema.Struct<{\n  readonly name: Schema.String;\n  readonly createdAt: Schema.Date;\n}>, {}> & Omit<Schema.Struct<{\n  readonly name: Schema.String;\n  readonly createdAt: Schema.Date;\n}>, keyof Schema.Top>"} apiScope={"api"} />
+<ApiSignature code={"EffectClass_base: Schema.Class<EffectClass, Schema.Struct<{\n  readonly name: Schema.String;\n  readonly createdAt: Schema.Date;\n}>, {}>"} source={"import type { Schema } from \"effect\";\n// ---cut---\nEffectClass_base: Schema.Class<EffectClass, Schema.Struct<{\n  readonly name: Schema.String;\n  readonly createdAt: Schema.Date;\n}>, {}>"} apiScope={"api"} />
 

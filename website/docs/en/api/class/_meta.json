@@ -1,17 +1,17 @@
 [
 	{
 		"type": "file",
-		"name": "mystruct",
-		"label": "MyStruct"
+		"name": "animal",
+		"label": "Animal"
 	},
 	{
 		"type": "file",
-		"name": "person",
-		"label": "Person"
+		"name": "cat",
+		"label": "Cat"
 	},
 	{
 		"type": "file",
-		"name": "versioned",
-		"label": "Versioned"
+		"name": "effectclass",
+		"label": "EffectClass"
 	}
 ]
