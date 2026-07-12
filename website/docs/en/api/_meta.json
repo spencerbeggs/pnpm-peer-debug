@@ -5,9 +5,7 @@
 		"label": "Classes",
 		"collapsible": true,
 		"collapsed": true,
-		"overviewHeaders": [
-			2
-		]
+		"overviewHeaders": [2]
 	},
 	{
 		"type": "dir",
@@ -15,8 +13,6 @@
 		"label": "Variables",
 		"collapsible": true,
 		"collapsed": true,
-		"overviewHeaders": [
-			2
-		]
+		"overviewHeaders": [2]
 	}
 ]

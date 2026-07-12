@@ -5,6 +5,6 @@ await build({
 		localPaths: ["../../website/lib/models/example"],
 		tsdoc: {
 			suppressWarnings: [{ messageId: "ae-forgotten-export", pattern: "_base" }],
-		}
+		},
 	},
 });
