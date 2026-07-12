@@ -1,9 +1,9 @@
 [
-    {
-        "type": "file",
-        "name": "index",
-        "label": "Overview"
-    },
+	{
+		"type": "file",
+		"name": "index",
+		"label": "Overview"
+	},
 	{
 		"type": "dir",
 		"name": "api",
