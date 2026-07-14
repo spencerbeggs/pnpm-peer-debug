@@ -9,8 +9,8 @@
 	},
 	{
 		"type": "dir",
-		"name": "variable",
-		"label": "Variables",
+		"name": "interface",
+		"label": "Interfaces",
 		"collapsible": true,
 		"collapsed": true,
 		"overviewHeaders": [2]

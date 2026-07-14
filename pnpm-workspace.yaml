@@ -64,3 +64,5 @@ catalogs:
 configDependencies:
   "@savvy-web/pnpm-plugin-silk": 0.23.1+sha512-Iv0lXkpG6NXcNu/khNeaNfpcI8KMnyOnmiB+BbwCw1t0csCZPzLf7EJ4zCuvD/yg1oyHquMXzBQHAzyGq+CnZw==
 loglevel: info
+overrides:
+  rspress-plugin-api-extractor: file:/Users/spencer/workspaces/spencerbeggs/rspress-plugin-api-extractor/plugin/dist/prod/npm/pkg

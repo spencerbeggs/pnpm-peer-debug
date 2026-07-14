@@ -17,7 +17,7 @@
 		"skipLibCheck": true,
 		"strict": true,
 		"strictNullChecks": true,
-		"target": "es2025",
+		"target": "esnext",
 		"verbatimModuleSyntax": true
 	}
 }

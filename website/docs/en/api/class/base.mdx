@@ -1,0 +1,54 @@
+---
+title: "Base | Class | API | example"
+description: A base class
+head:
+  - - meta
+    - property: "og:url"
+      content: "https://effected.spencerbeg.gs/api/class/base"
+  - - meta
+    - property: "og:type"
+      content: article
+  - - meta
+    - property: "og:description"
+      content: A base class
+  - - meta
+    - property: "og:image"
+      content: "https://effected.spencerbeg.gs/og-image.png"
+  - - meta
+    - property: "og:image:alt"
+      content: "example - example API Documentation"
+  - - meta
+    - property: "article:published_time"
+      content: "2026-07-12T19:07:49.238Z"
+  - - meta
+    - property: "article:modified_time"
+      content: "2026-07-12T19:49:21.700Z"
+  - - meta
+    - property: "article:section"
+      content: Classes
+  - - meta
+    - property: "article:tag"
+      content: TypeScript
+  - - meta
+    - property: "article:tag"
+      content: API
+  - - meta
+    - property: "article:tag"
+      content: example
+---
+
+
+import { SourceCode } from "@rspress/core/theme";
+import { ParametersTable } from "rspress-plugin-api-extractor/runtime";
+import { ApiSignature, ApiMember, ApiExample } from "rspress-plugin-api-extractor/runtime";
+
+# Base
+
+A base class
+
+<ApiSignature code={"class Base {\n    member(): void;\n}"} source={"class Base {\n    member(): void;\n}"} apiScope={"api"} />
+
+## Methods
+
+<ApiMember code={"member(): void;"} source={"class Base {\nmember(): void;\n}"} apiScope={"api"} memberName={"member"} summary={"Some documentation that we want to inherit"} id={"member"} hasParameters={false} />
+

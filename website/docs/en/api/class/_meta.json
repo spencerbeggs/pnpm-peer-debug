@@ -6,12 +6,22 @@
 	},
 	{
 		"type": "file",
+		"name": "base",
+		"label": "Base"
+	},
+	{
+		"type": "file",
 		"name": "cat",
 		"label": "Cat"
 	},
 	{
 		"type": "file",
-		"name": "effectclass",
-		"label": "EffectClass"
+		"name": "child",
+		"label": "Child"
+	},
+	{
+		"type": "file",
+		"name": "person",
+		"label": "Person"
 	}
 ]

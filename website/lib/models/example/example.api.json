@@ -246,7 +246,7 @@
 						{
 							"kind": "Property",
 							"canonicalReference": "example!Animal#createdAt:member",
-							"docComment": "",
+							"docComment": "/**\n * The date the animal was created\n */\n",
 							"excerptTokens": [
 								{
 									"kind": "Content",
@@ -278,7 +278,7 @@
 						{
 							"kind": "Property",
 							"canonicalReference": "example!Animal#name:member",
-							"docComment": "",
+							"docComment": "/**\n * The name of the animal\n */\n",
 							"excerptTokens": [
 								{
 									"kind": "Content",
@@ -305,6 +305,56 @@
 							"isStatic": false,
 							"isProtected": false,
 							"isAbstract": false
+						}
+					],
+					"implementsTokenRanges": []
+				},
+				{
+					"kind": "Class",
+					"canonicalReference": "example!Base:class",
+					"docComment": "/**\n * A base class\n *\n * @public\n */\n",
+					"excerptTokens": [
+						{
+							"kind": "Content",
+							"text": "declare class Base "
+						}
+					],
+					"fileUrlPath": "src/index.ts",
+					"releaseTag": "Public",
+					"isAbstract": false,
+					"name": "Base",
+					"preserveMemberOrder": false,
+					"members": [
+						{
+							"kind": "Method",
+							"canonicalReference": "example!Base#member:member(1)",
+							"docComment": "/**\n * Some documentation that we want to inherit\n */\n",
+							"excerptTokens": [
+								{
+									"kind": "Content",
+									"text": "member(): "
+								},
+								{
+									"kind": "Content",
+									"text": "void"
+								},
+								{
+									"kind": "Content",
+									"text": ";"
+								}
+							],
+							"isStatic": false,
+							"returnTypeTokenRange": {
+								"startIndex": 1,
+								"endIndex": 2
+							},
+							"releaseTag": "Public",
+							"isProtected": false,
+							"overloadIndex": 1,
+							"parameters": [],
+							"isOptional": false,
+							"isAbstract": false,
+							"name": "member"
 						}
 					],
 					"implementsTokenRanges": []
@@ -373,13 +423,165 @@
 					"implementsTokenRanges": []
 				},
 				{
+					"kind": "Class",
+					"canonicalReference": "example!Child:class",
+					"docComment": "/**\n * A child class that extends the base class and implements the IChild interface\n *\n * @public\n */\n",
+					"excerptTokens": [
+						{
+							"kind": "Content",
+							"text": "declare class Child extends "
+						},
+						{
+							"kind": "Reference",
+							"text": "Base",
+							"canonicalReference": "example!Base:class"
+						},
+						{
+							"kind": "Content",
+							"text": " implements "
+						},
+						{
+							"kind": "Reference",
+							"text": "IChild",
+							"canonicalReference": "example!IChild:interface"
+						},
+						{
+							"kind": "Content",
+							"text": " "
+						}
+					],
+					"fileUrlPath": "src/index.ts",
+					"releaseTag": "Public",
+					"isAbstract": false,
+					"name": "Child",
+					"preserveMemberOrder": false,
+					"members": [
+						{
+							"kind": "Method",
+							"canonicalReference": "example!Child#member:member(1)",
+							"docComment": "/**\n * Some documentation that we want to inherit\n */\n",
+							"excerptTokens": [
+								{
+									"kind": "Content",
+									"text": "member(): "
+								},
+								{
+									"kind": "Content",
+									"text": "void"
+								},
+								{
+									"kind": "Content",
+									"text": ";"
+								}
+							],
+							"isStatic": false,
+							"returnTypeTokenRange": {
+								"startIndex": 1,
+								"endIndex": 2
+							},
+							"releaseTag": "Public",
+							"isProtected": false,
+							"overloadIndex": 1,
+							"parameters": [],
+							"isOptional": false,
+							"isAbstract": false,
+							"name": "member"
+						},
+						{
+							"kind": "Property",
+							"canonicalReference": "example!Child#value:member",
+							"docComment": "/**\n * Some documentation that we want to inherit\n */\n",
+							"excerptTokens": [
+								{
+									"kind": "Content",
+									"text": "value: "
+								},
+								{
+									"kind": "Content",
+									"text": "string"
+								},
+								{
+									"kind": "Content",
+									"text": ";"
+								}
+							],
+							"isReadonly": false,
+							"isOptional": false,
+							"releaseTag": "Public",
+							"name": "value",
+							"propertyTypeTokenRange": {
+								"startIndex": 1,
+								"endIndex": 2
+							},
+							"isStatic": false,
+							"isProtected": false,
+							"isAbstract": false
+						}
+					],
+					"extendsTokenRange": {
+						"startIndex": 1,
+						"endIndex": 2
+					},
+					"implementsTokenRanges": [
+						{
+							"startIndex": 3,
+							"endIndex": 4
+						}
+					]
+				},
+				{
+					"kind": "Interface",
+					"canonicalReference": "example!IChild:interface",
+					"docComment": "/**\n * An interface representing a child\n *\n * @public\n */\n",
+					"excerptTokens": [
+						{
+							"kind": "Content",
+							"text": "interface IChild "
+						}
+					],
+					"fileUrlPath": "src/index.ts",
+					"releaseTag": "Public",
+					"name": "IChild",
+					"preserveMemberOrder": false,
+					"members": [
+						{
+							"kind": "PropertySignature",
+							"canonicalReference": "example!IChild#value:member",
+							"docComment": "/**\n * Some documentation that we want to inherit\n */\n",
+							"excerptTokens": [
+								{
+									"kind": "Content",
+									"text": "value: "
+								},
+								{
+									"kind": "Content",
+									"text": "string"
+								},
+								{
+									"kind": "Content",
+									"text": ";"
+								}
+							],
+							"isReadonly": false,
+							"isOptional": false,
+							"releaseTag": "Public",
+							"name": "value",
+							"propertyTypeTokenRange": {
+								"startIndex": 1,
+								"endIndex": 2
+							}
+						}
+					],
+					"extendsTokenRanges": []
+				},
+				{
 					"kind": "Variable",
-					"canonicalReference": "example!~EffectClass_base:var",
+					"canonicalReference": "example!~Person_base:var",
 					"docComment": "",
 					"excerptTokens": [
 						{
 							"kind": "Content",
-							"text": "EffectClass_base: "
+							"text": "Person_base: "
 						},
 						{
 							"kind": "Reference",
@@ -392,8 +594,8 @@
 						},
 						{
 							"kind": "Reference",
-							"text": "EffectClass",
-							"canonicalReference": "example!EffectClass:class"
+							"text": "Person",
+							"canonicalReference": "example!Person:class"
 						},
 						{
 							"kind": "Content",
@@ -430,7 +632,7 @@
 					"fileUrlPath": "src/index.ts",
 					"isReadonly": true,
 					"releaseTag": "Public",
-					"name": "EffectClass_base",
+					"name": "Person_base",
 					"variableTypeTokenRange": {
 						"startIndex": 1,
 						"endIndex": 11
@@ -438,17 +640,17 @@
 				},
 				{
 					"kind": "Class",
-					"canonicalReference": "example!EffectClass:class",
+					"canonicalReference": "example!Person:class",
 					"docComment": "/**\n * A person\n *\n * @public\n */\n",
 					"excerptTokens": [
 						{
 							"kind": "Content",
-							"text": "declare class EffectClass extends "
+							"text": "declare class Person extends "
 						},
 						{
 							"kind": "Reference",
-							"text": "EffectClass_base",
-							"canonicalReference": "example!~EffectClass_base"
+							"text": "Person_base",
+							"canonicalReference": "example!~Person_base"
 						},
 						{
 							"kind": "Content",
@@ -458,12 +660,12 @@
 					"fileUrlPath": "src/index.ts",
 					"releaseTag": "Public",
 					"isAbstract": false,
-					"name": "EffectClass",
+					"name": "Person",
 					"preserveMemberOrder": false,
 					"members": [
 						{
 							"kind": "Property",
-							"canonicalReference": "example!EffectClass.serializer:member",
+							"canonicalReference": "example!Person.serializer:member",
 							"docComment": "/**\n * Create a custom serializer using the class itself\n *\n * @public\n */\n",
 							"excerptTokens": [
 								{
@@ -481,8 +683,8 @@
 								},
 								{
 									"kind": "Reference",
-									"text": "EffectClass",
-									"canonicalReference": "example!EffectClass:class"
+									"text": "Person",
+									"canonicalReference": "example!Person:class"
 								},
 								{
 									"kind": "Content",
@@ -507,7 +709,7 @@
 						},
 						{
 							"kind": "Method",
-							"canonicalReference": "example!EffectClass#speak:member(1)",
+							"canonicalReference": "example!Person#speak:member(1)",
 							"docComment": "/**\n * Makes the person speak a message.\n *\n * @param message - The message to speak\n *\n * @returns The formatted message\n */\n",
 							"excerptTokens": [
 								{
