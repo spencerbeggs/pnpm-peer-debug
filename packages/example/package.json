@@ -28,14 +28,14 @@
 		"build:prod": "node savvy.build.ts --target prod",
 		"types:check": "tsc --noEmit"
 	},
-	"peerDependencies": {
-		"effect": "catalog:effect"
-	},
 	"devDependencies": {
-		"@savvy-web/bundler": "^1.1.12",
+		"@savvy-web/bundler": "^2.0.3",
 		"@types/node": "catalog:silk",
 		"effect": "catalog:effect",
 		"typescript": "catalog:silk"
+	},
+	"peerDependencies": {
+		"effect": "catalog:effect"
 	},
 	"engines": {
 		"node": ">=24.11.0"
