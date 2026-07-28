@@ -1,7 +1,7 @@
 {
 	"metadata": {
 		"toolPackage": "@microsoft/api-extractor",
-		"toolVersion": "7.58.11",
+		"toolVersion": "7.58.12",
 		"schemaVersion": 1011,
 		"oldestForwardsCompatibleVersion": 1001,
 		"tsdocConfig": {
@@ -584,49 +584,13 @@
 							"text": "Person_base: "
 						},
 						{
-							"kind": "Reference",
-							"text": "Schema.Class",
-							"canonicalReference": "effect!Class:interface"
-						},
-						{
 							"kind": "Content",
-							"text": "<"
+							"text": "typeof "
 						},
 						{
 							"kind": "Reference",
-							"text": "Person",
-							"canonicalReference": "example!Person:class"
-						},
-						{
-							"kind": "Content",
-							"text": ", "
-						},
-						{
-							"kind": "Reference",
-							"text": "Schema.Struct",
-							"canonicalReference": "effect!Struct:interface"
-						},
-						{
-							"kind": "Content",
-							"text": "<{\n  readonly name: "
-						},
-						{
-							"kind": "Reference",
-							"text": "Schema.String",
-							"canonicalReference": "effect!String:interface"
-						},
-						{
-							"kind": "Content",
-							"text": ";\n  readonly createdAt: "
-						},
-						{
-							"kind": "Reference",
-							"text": "Schema.Date",
-							"canonicalReference": "effect!Date:interface"
-						},
-						{
-							"kind": "Content",
-							"text": ";\n}>, {}>"
+							"text": "PersonBase",
+							"canonicalReference": "example!~PersonBase:class"
 						}
 					],
 					"fileUrlPath": "src/index.ts",
@@ -635,13 +599,13 @@
 					"name": "Person_base",
 					"variableTypeTokenRange": {
 						"startIndex": 1,
-						"endIndex": 11
+						"endIndex": 3
 					}
 				},
 				{
 					"kind": "Class",
 					"canonicalReference": "example!Person:class",
-					"docComment": "/**\n * A person\n *\n * @public\n */\n",
+					"docComment": "",
 					"excerptTokens": [
 						{
 							"kind": "Content",
@@ -756,6 +720,101 @@
 							"name": "speak"
 						}
 					],
+					"extendsTokenRange": {
+						"startIndex": 1,
+						"endIndex": 2
+					},
+					"implementsTokenRanges": []
+				},
+				{
+					"kind": "Variable",
+					"canonicalReference": "example!~PersonBase_base:var",
+					"docComment": "",
+					"excerptTokens": [
+						{
+							"kind": "Content",
+							"text": "PersonBase_base: "
+						},
+						{
+							"kind": "Reference",
+							"text": "Schema.Class",
+							"canonicalReference": "effect!Class:interface"
+						},
+						{
+							"kind": "Content",
+							"text": "<"
+						},
+						{
+							"kind": "Reference",
+							"text": "Person",
+							"canonicalReference": "example!Person:class"
+						},
+						{
+							"kind": "Content",
+							"text": ", "
+						},
+						{
+							"kind": "Reference",
+							"text": "Schema.Struct",
+							"canonicalReference": "effect!Struct:interface"
+						},
+						{
+							"kind": "Content",
+							"text": "<{\n  readonly name: "
+						},
+						{
+							"kind": "Reference",
+							"text": "Schema.String",
+							"canonicalReference": "effect!String:interface"
+						},
+						{
+							"kind": "Content",
+							"text": ";\n  readonly createdAt: "
+						},
+						{
+							"kind": "Reference",
+							"text": "Schema.Date",
+							"canonicalReference": "effect!Date:interface"
+						},
+						{
+							"kind": "Content",
+							"text": ";\n}>, {}>"
+						}
+					],
+					"fileUrlPath": "src/index.ts",
+					"isReadonly": true,
+					"releaseTag": "Public",
+					"name": "PersonBase_base",
+					"variableTypeTokenRange": {
+						"startIndex": 1,
+						"endIndex": 11
+					}
+				},
+				{
+					"kind": "Class",
+					"canonicalReference": "example!~PersonBase:class",
+					"docComment": "",
+					"excerptTokens": [
+						{
+							"kind": "Content",
+							"text": "declare class PersonBase extends "
+						},
+						{
+							"kind": "Reference",
+							"text": "PersonBase_base",
+							"canonicalReference": "example!~PersonBase_base"
+						},
+						{
+							"kind": "Content",
+							"text": " "
+						}
+					],
+					"fileUrlPath": "src/index.ts",
+					"releaseTag": "Public",
+					"isAbstract": false,
+					"name": "PersonBase",
+					"preserveMemberOrder": false,
+					"members": [],
 					"extendsTokenRange": {
 						"startIndex": 1,
 						"endIndex": 2
