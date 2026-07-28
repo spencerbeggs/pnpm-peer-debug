@@ -69,18 +69,18 @@ export class Child extends Base implements IChild {
  * A person
  * @public
  */
-export class Person extends Schema.Class<Person>("Person")(
-	Schema.Struct({
-		/**
-		 * The name of the person
-		 */
-		name: Schema.String,
-		/**
-		 * The date the person was created
-		 */
-		createdAt: Schema.Date,
-	}),
-) {
+const PersonSchema = Schema.Struct({
+	/**
+	 * The name of the person
+	 */
+	name: Schema.String,
+	/**
+	 * The date the person was created
+	 */
+	createdAt: Schema.Date,
+});
+
+export class Person extends (Schema.Class("Person")(PersonSchema) as typeof PersonSchema) {
 	/**
 	 *  Create a custom serializer using the class itself
 	 *  @public
