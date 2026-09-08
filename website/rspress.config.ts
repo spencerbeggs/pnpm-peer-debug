@@ -39,16 +39,11 @@ export default defineConfig({
 		'<link rel="manifest" href="/site.webmanifest">',
 		'<meta name="theme-color" content="#D6219B">',
 	],
-
 	globalStyles: join(import.meta.dirname, "theme/vitest-agent-theme.css"),
 	logo: { light: "/images/logo-horizontal.svg", dark: "/images/logo-horizontal-dark.svg" },
 	icon: "/images/favicon-32x32.png",
 	plugins: [
 		ApiExtractorPlugin({
-			siteUrl: "https://effected.spencerbeg.gs",
-			ogImage: {
-				url: "https://effected.spencerbeg.gs/og-image.png",
-			},
 			api: ApiExtractorPlugin.api.fromDir("./lib/models/example"),
 			observability: {
 				logLevel: "info",

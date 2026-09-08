@@ -3,5 +3,5 @@ packages:
   - website
 autoInstallPeers: true
 configDependencies:
-  "@effected/pnpm-plugin-effect": 0.1.1+sha512-TpmnUekTiRjpnHbFSEPqKeyhX+jQ3WXpUjOcp+F8rNqHBXb6KDL4mMKueHUjFeDbwi0EM0/gOA0bHzDsM5pVAQ==
-  "@savvy-web/pnpm-plugin-silk": 0.26.1+sha512-1yWOOzo7sw4rFGYoXP7qgwzdnrQChWq1hPYr5bSLZQLICFJRPV0x3HbNgloWQg08AFZ2c54UlWpUjhrhFl6Dpw==
+  "@effected/pnpm-plugin-effect": 0.7.1+sha512-Y6FL3tc/wRtQb1cBsNIUiPVwmfzH+spnl7gNTWyhPeiMdsScPl3McYEiUBoUYPD+eIvdh1QPA1SDDF1YFvrjCg==
+  "@savvy-web/pnpm-plugin-silk": 0.34.1+sha512-c4v4LPIvj8WERmS1UVUafk4THBgVhG/ULH1OggU94wiPFazQWcJQ0XtEocBLlXXZAL9R7W5PN0L7W22+CBj67g==
