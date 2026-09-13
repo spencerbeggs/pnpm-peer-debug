@@ -46,7 +46,7 @@ jobs:
           dry-run: ${{ inputs.dry-run || false }}
           changesets: false
           auto-merge: "squash"
-          upgrade-package-manager: "^11.0.0"
+          upgrade-package-manager: "^12.0.0"
           upgrade-runtime-node: "^26.0.0"
           config-dependencies: |
             @savvy-web/pnpm-plugin-silk
@@ -55,6 +55,7 @@ jobs:
             @effected/*
             @savvy-web/*
             @vitest-agent/*
+            @okfit/*
             rspress-plugin-api-extractor
           run: |
             pnpm savvy init
