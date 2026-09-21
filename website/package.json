@@ -11,13 +11,13 @@
 	},
 	"devDependencies": {
 		"@rspress/core": "catalog:docs",
-		"@rspress/plugin-sitemap": "^2.0.17",
+		"@rspress/plugin-sitemap": "^2.0.22",
 		"@types/node": "catalog:docs",
 		"@types/react": "catalog:docs",
 		"@types/react-dom": "catalog:docs",
 		"react": "catalog:docs",
 		"react-dom": "catalog:docs",
-		"rspress-plugin-api-extractor": "^0.16.5",
+		"rspress-plugin-api-extractor": "^0.17.1",
 		"rspress-plugin-mermaid": "catalog:docs"
 	}
 }
